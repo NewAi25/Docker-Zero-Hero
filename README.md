@@ -1,32 +1,32 @@
-# 🚀 Docker Learning Recipes – From Confused to Confident
+# Docker — Zero to Hero
 
-This repository documents my **hands-on journey of learning Docker** — not through just reading or watching videos, but by doing, debugging, and documenting everything as structured **DevOps recipes**.
+A personal learning repository for going from absolute beginner to confident user of Docker, covering containers, images, volumes, networks and Compose.
 
-Each recipe follows a consistent and beginner-friendly format:
-- 🔸 **What** – Concept and context
-- 🔧 **How** – Step-by-step commands with explanations
-- 💡 **Why** – Real-world relevance and practical reasoning
+## What's inside
 
-> 📌 Perfect for: DevOps beginners, WSL2 users, cloud learners, and anyone new to Docker.
+Notes, commands, Dockerfiles and small exercises that build up Docker knowledge step by step.
 
----
+## Roadmap
 
-## 📚 Recipe Index
+Install Docker and verify the daemon. Run your first container with `docker run`. Build your first image with a Dockerfile. Persist data with volumes. Connect containers using networks. Orchestrate multi-container apps with Docker Compose. Push images to a registry such as Docker Hub or GHCR.
 
-### ✅ [Recipe 1: Installing Ubuntu 22.04 LTS on Windows Using WSL2](./Recipe-1-Installing-Ubuntu-WSL2.pdf)
+## Useful commands
 
-- Set up a real Linux terminal on Windows using WSL2.
-- Step-by-step instructions to enable WSL2, install Ubuntu, and configure your dev environment.
-- Foundation for running Docker, Git, Python, and other CLI tools.
+```bash
+docker --version
+docker run hello-world
+docker build -t myapp:1.0 .
+docker images
+docker ps -a
+docker exec -it <container> sh
+docker compose up -d
+docker compose down
+```
 
----
+## Goals
 
-### ✅ [Recipe 2: Installing DevOps Tools (Git, Docker, Python) on Ubuntu 22.04 in WSL2](./Recipe-2-Installing-DevOps-Tools.pdf)
+Use Docker confidently in day-to-day development. Build small, secure, layered images. Understand the difference between images, containers, volumes and networks. Be ready to use Docker in CI/CD pipelines.
 
-- Install Git, Python, curl, htop, net-tools, and **Docker Engine natively** (without Docker Desktop).
-- Prepares your terminal for real-world DevOps scripting and container work.
-- Includes group permissions for using `docker` without `sudo`.
+## License
 
----
-
-### ✅ [Recipe 3: Hello World in Docker – Run Your First Container](./Recipe-3-Hello-World)
+MIT
